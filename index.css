@@ -1,0 +1,369 @@
+/* styles.css */
+
+/* Resetting default browser styles */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header styles */
+.header {
+    background-color: #000000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+/* Logo styles */
+.logo {
+    margin-bottom: 20px; /* Add margin below the logo */
+}
+
+.logo img {
+    max-width: 200px; /* Adjust the max-width of the logo as needed */
+}
+/* Navigation styles */
+.navigation {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.navigation__list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+.navigation__link {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.navigation__link:hover {
+    background-color: #555;
+}
+
+.header__title {
+    margin: 0;
+}
+
+/* Main content styles */
+.main-content {
+    padding: 80px;
+    justify-content: space-between; /* Add space between sections */
+    position: relative; /* Ensure positioning context */
+    background-color: #000000; /* Set background color */
+    z-index: 0; /* Set z-index to ensure the background is behind the content */
+    display: flex; /* Add flex display */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    background-repeat: no-repeat;
+}
+
+.section-title {
+    color: #333;
+}
+
+.services-list {
+    list-style-type: none;
+}
+.about-section,
+.services-section,
+.contact-section {
+    flex: 1; /* Equal width for each section */
+    margin-right: 20px; /* Add some space between sections */
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background color for better readability */
+    flex-basis: calc(33.33% - 20px); /* Adjust width based on content */
+
+
+}
+.contact-section p {
+    margin-bottom: 10px; /* Add margin below each paragraph */
+    font-size: 16px; /* Adjust font size as needed */
+    color: #333; /* Set color for paragraph text */
+}
+/*clickable section*/
+
+.clickable-section {
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none; /* Remove default anchor underline */
+    color: inherit; /* Inherit text color from parent */
+}
+
+.clickable-section:hover {
+    background-color: #f0f0f0; /* Change background color on hover */
+}
+/*service slider*/
+.service-slider {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.slider-wrapper {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.slider {
+    display: flex;
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+    margin-right: 10px; /* Adjust spacing between images */
+}
+/* Content wrapper styles */
+.content-wrapper {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    justify-content: space-between; /* Distribute items evenly */
+    background-image: url('asset/cup.jpg'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+    background-size: cover; /* Cover the entire container with the background image */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+    padding: 20px; /* Adjust padding as needed */
+    margin-bottom: 20px; /* Adjust margin as needed */
+    width: 100%; /* Set the width to fill the entire container */
+    text-align: center; /* Center the content horizontally */
+}
+/* Welcome content styles */
+.welcome-content {
+    background-color:transparent; /* Use transparent for a clear background */
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 80%; /* Adjust width as needed */
+    text-align: center;
+}
+
+.welcome-content h2 {
+    color: #fffdfd;
+    margin-bottom: 10px;
+}
+
+.welcome-content p {
+    color: #fffefe;
+}
+/* Footer styles */
+.footer {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    bottom: 0;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer__copyright {
+    margin: 0;
+}
+.footer__section {
+    flex: 1;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.footer__section h3 {
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: small;
+}
+
+.footer__section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer__section ul li {
+    margin-bottom: 5px;
+    font-size: small;
+}
+/* Additional CSS for .section-fo */
+.section-fo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+    flex: 1; /* Equal width for each section */
+}
+
+.section-fo h2 {
+    margin: 0;
+    color: #333;
+}
+
+.section-fo p {
+    color: #ffffff;
+    margin-top: 10px;
+    font-size: small;
+}
+/* CSS styles for social media icons */
+.social-icon {
+    text-align: center;
+}
+
+.social-icon ul {
+    padding: 0;
+    list-style: none;
+    margin-top: 10px;
+    display: flex;
+}
+.social-icon h3 {
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: small;
+}
+
+.social-icon ul li {
+    margin-right: 10px;
+    font-size: small;
+}
+
+.social-icon ul li:last-child {
+    margin-right: 0;
+}
+
+.social-icon ul li a {
+    color: #ffffff;
+    font-size: 24px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.social-icon ul li a:hover {
+    color: #00f; /* Change color on hover */
+}
+/* Responsive CSS for small screens (phones) */
+@media only screen and (max-width: 768px) {
+    /* Global styles */
+    body {
+        font-size: 14px; /* Adjust base font size for better readability on small screens */
+    }
+    /* Adjustments for header */
+    .header {
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+    .header__title {
+        margin-bottom: 10px; /* Add spacing between header title and navigation list */
+    }
+    /* Navigation styles */
+    .navigation {
+        justify-content: center; /* Center navigation items on smaller screens */
+    }
+
+    .navigation__link {
+        padding:10px 15px; /* Adjust padding for navigation links on smaller screens */
+    }
+
+    /* Adjustments for main content */
+    .main-content {
+        padding: 40px 20px; /* Adjust padding for smaller screens */
+    }
+
+    /* Adjustments for sections */
+    .about-section,
+    .services-section,
+    .contact-section {
+        margin-right: 0; /* Remove margin between sections for smaller screens */
+        margin-bottom: 40px; /* Increase margin bottom for better spacing */
+        padding: 20px; /* Adjust padding for smaller sections */
+        flex-basis: 100%; /* Set width to 100% for full-width sections */
+    }
+
+    /* Adjustments for footer */
+    .footer {
+        padding: 20px; /* Adjust padding for smaller footer */
+    }
+
+    /* General adjustments */
+    .content-wrapper {
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .welcome-content {
+        width: 100%; /* Set width to 100% for full-width content */
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .welcome-content h2 {
+        font-size: 20px; /* Reduce font size for smaller screens */
+    }
+
+    .welcome-content p {
+        font-size: 14px; /* Reduce font size for smaller screens */
+    }
+
+    .section-title {
+        font-size: 20px; /* Reduce font size for smaller screens */
+    }
+
+    .services-list {
+        padding: 0 20px; /* Adjust padding for smaller screens */
+    }
+
+    .service-slider {
+        margin-top: 40px; /* Increase margin top for better spacing */
+    }
+    /* Adjustments for footer */
+    .footer{
+        display: flex; /* Display as flex container */
+        flex-wrap: wrap; /* Allow wrapping for smaller screens */
+        justify-content: space-around; /* Evenly distribute items horizontally */
+        align-items: center; /* Center items vertically */
+        max-width: fit-content;
+    }
+
+    .footer__section {
+        flex: 1; /* Equal width for each section */
+        text-align: center; /* Center content horizontally */
+    }
+    /* Adjustments for footer */
+    .footer {
+        display: flex; /* Display as flex container */
+        flex-wrap: wrap; /* Allow wrapping for smaller screens */
+        justify-content: space-around; /* Evenly distribute items horizontally */
+        align-items: center; /* Center items vertically */
+    }
+
+    .footer__section {
+        flex: 1; /* Equal width for each section */
+        text-align: center; /* Center content horizontally */
+    }
+
+    /* Adjustments for section-fo */
+    .section-fo {
+        display: flex; /* Display as flex container */
+        justify-content: space-between; /* Evenly distribute items horizontally */
+        align-items: center; /* Center items vertically */
+        flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    }
+
+    .section-fo h2 {
+        margin: 0;
+        color: #333;
+    }
+
+    .section-fo p {
+        color: #ffffff;
+        margin-top: 10px;
+        font-size: small;
+    }
+}

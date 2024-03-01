@@ -1,0 +1,349 @@
+/* contact.css */
+
+/* Resetting default browser styles */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header styles */
+.header {
+    background-color: #000000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__title {
+    margin: 0;
+}
+/* Logo styles */
+.logo {
+    margin-bottom: 20px; /* Add margin below the logo */
+}
+
+.logo img {
+    max-width: 200px; /* Adjust the max-width of the logo as needed */
+}
+
+/* Navigation styles */
+.navigation {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navigation__list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+.navigation__link {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.navigation__link:hover {
+    background-color: #555;
+}
+
+/* Main content styles */
+.main-content {
+    padding: 20px;
+    text-align: center;
+    background-image: url('asset/cup.jpg'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+
+}
+
+.section-title {
+    color: #ffffff;
+}
+
+.contact-section {
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: transparent;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.contact-section h2 {
+    color: hsl(0, 100%, 100%);
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.contact-form {
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px;
+    flex: 1;
+    padding: 20px;
+    border-radius: 5px;
+    background-color:transparent;
+    margin-right: 20px;
+}
+.contact-form form {
+    display: grid;
+    gap: 10px;
+}
+.contact-info {
+    flex: 0 0 48%; /* Adjust width as needed */
+    padding: 20px;
+    border-radius: 5px;
+    background-color:transparent;
+    margin-bottom: 20px;
+}
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+
+}
+
+.contact-info ul li {
+    margin-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.contact-info ul li i {
+    margin-right: 5px;
+}
+.contact-section p {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.contact-form textarea {
+    height: 150px;
+}
+.contact-form input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+.contact-form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+/*social-media-style*/
+.social-media {
+    padding: 20px;
+    border-radius: 5px;
+    background-color: transparent;
+    flex: 0 0 48%; /* Adjust width as needed */
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.social-media h2 {
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.social-media ul {
+    list-style: none;
+    padding: 0;
+}
+
+.social-media ul li {
+    margin-bottom: 10px;
+}
+
+.social-media ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.social-media ul li a:hover {
+    color: blue;
+}
+/* Social Media Icons */
+.social-media ul li a {
+    display: block;
+    font-size: 24px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer__copyright {
+    margin: 0;
+}
+.footer__section {
+    flex: 1;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.footer__section h3 {
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: small;
+}
+
+.footer__section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer__section ul li {
+    margin-bottom: 5px;
+    font-size: small;
+}
+/* Additional CSS for .section-fo */
+.section-fo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+    flex: 1; /* Equal width for each section */
+}
+
+.section-fo h2 {
+    margin: 0;
+    color: #333;
+}
+
+.section-fo p {
+    color: #ffffff;
+    margin-top: 10px;
+    font-size: small;
+}
+/* CSS styles for social media icons */
+.social-icon {
+    text-align: center;
+}
+
+.social-icon ul {
+    padding: 0;
+    list-style: none;
+    margin-top: 10px;
+    display: flex;
+}
+.social-icon h3 {
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: small;
+}
+
+.social-icon ul li {
+    margin-right: 10px;
+    font-size: small;
+}
+
+.social-icon ul li:last-child {
+    margin-right: 0;
+}
+
+.social-icon ul li a {
+    color: #ffffff;
+    font-size: 24px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.social-icon ul li a:hover {
+    color: #00f; /* Change color on hover */
+}
+/* Responsive CSS for small screens */
+@media only screen and (max-width: 768px) {
+    /* Global styles */
+    body {
+        font-size: 14px; /* Adjust base font size for better readability on small screens */
+    }
+    .header {
+        padding: 10px; /* Adjust header padding for smaller screens */
+    }
+    .header__title {
+        margin-bottom: 10px; /* Add spacing between header title and navigation list */
+    }
+ /* Navigation styles */
+    .navigation {
+        justify-content: center; /* Center navigation items on smaller screens */
+    }
+
+    .navigation__link {
+        padding:10px 15px; /* Adjust padding for navigation links on smaller screens */
+    }
+
+    .main-content {
+        padding: 10px; /* Adjust main content padding for smaller screens */
+    }
+
+    .section-title {
+        font-size: 20px; /* Decrease section title font size for smaller screens */
+    }
+
+    .contact-section {
+        flex-direction: column; /* Stack contact section items vertically on smaller screens */
+        align-items: center; /* Center contact section items horizontally */
+    }
+
+    .contact-form {
+        margin-right: 0; /* Remove right margin for contact form on smaller screens */
+    }
+
+    .contact-info {
+        margin-bottom: 10px; /* Add spacing between contact info sections on smaller screens */
+    }
+
+    .footer {
+        flex-direction: column; /* Stack footer items vertically on smaller screens */
+        align-items: center; /* Center footer items horizontally */
+    }
+
+    .footer__section {
+        margin-bottom: 10px; /* Add spacing between footer sections on smaller screens */
+    }
+
+    .social-media {
+        margin-bottom: 10px; /* Add spacing between social media sections on smaller screens */
+    }
+}
