@@ -55,6 +55,10 @@ body {
 .header__title {
     margin: 0;
 }
+/* Hide the "Menu" button and dropdown menu */
+.menu-btn, .dropdown-menu {
+    display: none;
+}
 
 /* Main content styles */
 .main-content {
@@ -288,11 +292,6 @@ body {
         flex-basis: 100%; /* Set width to 100% for full-width sections */
     }
 
-    /* Adjustments for footer */
-    .footer {
-        padding: 20px; /* Adjust padding for smaller footer */
-    }
-
     /* General adjustments */
     .content-wrapper {
         padding: 20px; /* Adjust padding for smaller screens */
@@ -324,30 +323,13 @@ body {
     }
     /* Adjustments for footer */
     .footer{
-        display: flex; /* Display as flex container */
-        flex-wrap: wrap; /* Allow wrapping for smaller screens */
-        justify-content: space-around; /* Evenly distribute items horizontally */
         align-items: center; /* Center items vertically */
-        max-width: fit-content;
+        flex-direction: column; /* Stack footer items vertically on smaller screens */
     }
 
     .footer__section {
-        flex: 1; /* Equal width for each section */
-        text-align: center; /* Center content horizontally */
-    }
-    /* Adjustments for footer */
-    .footer {
-        display: flex; /* Display as flex container */
-        flex-wrap: wrap; /* Allow wrapping for smaller screens */
-        justify-content: space-around; /* Evenly distribute items horizontally */
-        align-items: center; /* Center items vertically */
-    }
-
-    .footer__section {
-        flex: 1; /* Equal width for each section */
-        text-align: center; /* Center content horizontally */
-    }
-
+        margin-bottom: 10px;
+}
     /* Adjustments for section-fo */
     .section-fo {
         display: flex; /* Display as flex container */
@@ -366,4 +348,60 @@ body {
         margin-top: 10px;
         font-size: small;
     }
+    /* Hide individual navigation links */
+    .navigation__list {
+        display: none;
+    }
+    /* Display the "Menu" button */
+    .menu-btn {
+        display: block;
+        background-color: #000000;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        text-decoration: none;
+        margin-right: 20px; /* Add margin for spacing */
+        margin-left: auto; /* Move the menu button to the right */
+    }
+    .menu-btn:hover {
+        background-color: #555; /* Change background color on hover */
+    }
+
+    /* Styling for the dropdown menu */
+    .dropdown-menu {
+        display: none;
+        position: absolute;
+        background-color: #000000;
+        min-width: 160px;
+        z-index: 1;
+        right: 0; /* Align the dropdown menu to the right side */
+    }
+
+    .dropdown-menu a {
+        color: #fff;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-menu a:hover {
+        background-color: #555
+    }
+    /* CSS for the bars icon */
+.menu-btn i {
+    font-size: 24px; /* Adjust the icon size as needed */
+    color: #fff; /* Set the icon color */
+    margin-right: 5px; /* Optional: Add some spacing around the icon */
+}
+ /* CSS for the bars icon */
+ .menu-btn i {
+    font-size: 24px; /* Adjust the icon size as needed */
+    color: #fff; /* Set the icon color */
+    margin-right: 5px; /* Optional: Add some spacing around the icon */
+}
+/* Show the dropdown menu when the menu button is clicked */
+.menu-wrapper:hover .dropdown-menu {
+    display: block;
+}
 }

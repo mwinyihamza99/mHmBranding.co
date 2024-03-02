@@ -58,6 +58,10 @@ body {
 .navigation__link:hover {
     background-color: #555;
 }
+/* Hide the "Menu" button and dropdown menu */
+.menu-btn, .dropdown-menu {
+    display: none;
+}
 
 /* Main content styles */
 .main-content {
@@ -219,4 +223,67 @@ body {
     .social-icon ul {
         justify-content: center; /* Center social media icons horizontally on smaller screens */
     }
+      /* Hide individual navigation links */
+      .navigation__list {
+        display: none;
+    }
+
+    /* Display the "Menu" button */
+    .menu-btn {
+        display: block;
+        background-color: #000000;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        text-decoration: none;
+        margin-right: 20px; /* Add margin for spacing */
+        margin-left: auto; /* Move the menu button to the right */
+    }
+
+    /* Styling for the dropdown menu */
+    .dropdown-menu {
+        display: none;
+        position: absolute;
+        background-color: #000000;
+        min-width: 160px;
+        z-index: 1;
+        right: 0; /* Align the dropdown menu to the right side */
+    }
+    .dropdown-menu a {
+        color: #fff;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-menu a:hover {
+        background-color: #555;
+    }
+     /* CSS for the bars icon */
+.menu-btn i {
+    font-size: 24px; /* Adjust the icon size as needed */
+    color: #fff; /* Set the icon color */
+    margin-right: 5px; /* Optional: Add some spacing around the icon */
+} 
+    /* Show the dropdown menu when the menu button is clicked */
+.menu-wrapper:hover .dropdown-menu {
+    display: block;
 }
+/* Hide the navigation links by default */
+.navigation-links {
+    display: none;
+}
+
+/* Style the bars icon */
+.menu-icon {
+    font-size: 24px;
+    color: #fff;
+}
+
+/* Hover effect for the bars icon */
+.menu-icon:hover {
+    cursor: pointer;
+}
+}
+
